@@ -1,0 +1,38 @@
+name: Resource addition or correction
+description: Suggest a campus resource or update directory information.
+title: "[Resource] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping ELAC students find support. Issues are public. Please do not include student IDs, medical information, financial documents, or private contact details."
+  - type: input
+    id: resource
+    attributes:
+      label: Resource or program name
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: What needs to change?
+      options:
+        - Add a resource
+        - Correct information
+        - Report a broken link
+        - Report a program that is no longer available
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Suggested change
+      description: Tell us what should be added or corrected.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official public source URL
+      description: Prefer an ELAC or LACCD page, or an official program page.
+    validations:
+      required: true

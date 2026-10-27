@@ -23,7 +23,7 @@ Expected project URL after GitHub Pages deployment: https://zcheng31.github.io/h
 
 ## Updating the directory
 
-Edit `resources.js`. Each resource has a stable ID, category, description, access type, eligibility explanation, official source URL, and next steps. Preserve stable IDs so existing saved lists continue to work. `index.html` contains the presentation and FAQ; `styles.css` controls the design; `app.js` handles search, filters, saves, and dialogs.
+Edit `resources.js`. Each resource has a stable ID, category, description, access type, eligibility explanation, official source URL, and next steps. Preserve stable IDs so existing saved lists continue to work. `index.html` contains the presentation and FAQ; `styles.css` controls the design; `app.js` handles search, filters, saves, and dialogs. Increment the asset version query strings in `index.html` when changing JavaScript or CSS, so returning visitors receive a consistent release.
 
 Official pages and ELAC library guides were researched October 27, 2026. Hours and dated events are intentionally linked to their official pages rather than copied into a calendar. No service availability or awards are guaranteed. Recheck official sources before updating claims; do not label health care, childcare, paid courses, club dues, printing, or housing as universally free.
 

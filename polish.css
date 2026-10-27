@@ -117,4 +117,53 @@
   .resource-card { padding:22px; }
   .pathway { padding:25px; }
 }
-@media print { .hero-actions { display:none; } .hero { padding-block:20px; } }
+/* A welcoming, self-contained stop for finding a campus community. */
+.clubs-section { margin:0 0 36px; padding:30px; border:1px solid #d9e3cf; border-radius:20px; background:linear-gradient(125deg,#eef3e5,#f5f6ed); scroll-margin-top:110px; }
+.clubs-intro { display:flex; align-items:center; justify-content:space-between; gap:30px; margin-bottom:24px; }
+.clubs-intro>div { max-width:590px; }
+.clubs-intro .eyebrow { font-size:10px; margin-bottom:10px; }
+.clubs-intro h3 { margin:0 0 10px; font-family:'Libre Caslon Display',Georgia,serif; font-size:44px; font-weight:400; line-height:1.1; letter-spacing:-.02em; }
+.clubs-intro h3 em { color:#07523d; }
+.clubs-intro>div>p:last-child { margin:0; color:#52624e; font-size:13px; line-height:1.7; }
+.clubs-directory-link { flex-shrink:0; border:1px solid #a9bba0; border-radius:8px; padding:13px 17px; font-size:12px; color:#07523d; background:#fcfdf8; }
+.clubs-directory-link:hover { background:#e4edd9; }
+.club-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.club-card { display:flex; flex-direction:column; min-width:0; padding:20px; border:1px solid #dce4d4; border-radius:12px; background:#fffefb; color:inherit; text-decoration:none; transition:transform .2s,box-shadow .2s,border-color .2s; }
+.club-card:hover { transform:translateY(-3px); border-color:#a8bda0; box-shadow:0 8px 20px #173d3209; }
+.club-card-top { display:flex; align-items:center; gap:9px; margin-bottom:22px; }
+.club-icon { display:grid; place-items:center; flex-shrink:0; width:36px; height:36px; border-radius:10px; color:#07523d; background:#edf2e4; }
+.club-icon .icon { width:19px; height:19px; }
+.club-card:nth-child(2) .club-icon { background:#f1ebd8; color:#706136; }
+.club-card:nth-child(3) .club-icon { background:#e7eeeb; color:#42685d; }
+.club-card:nth-child(4) .club-icon { background:#eee9ef; color:#735e77; }
+.club-interest { font-size:8px; line-height:1.5; letter-spacing:.07em; font-weight:600; color:#64745c; }
+.club-arrow { margin-left:auto; align-self:flex-start; color:#71846a; }
+.club-card h4 { margin:0 0 10px; font-size:17px; font-weight:600; letter-spacing:-.025em; }
+.club-card>p { margin:0 0 22px; font-size:12px; line-height:1.75; color:#5f6c59; }
+.club-card-link { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:auto; font-size:11px; font-weight:600; color:#07523d; }
+.club-card-link .icon { width:15px; height:15px; }
+.clubs-help { display:flex; justify-content:space-between; align-items:center; gap:24px; border-top:1px solid #d5dfca; padding-top:20px; margin-top:24px; }
+.clubs-help p { margin:0; color:#52624e; font-size:12px; line-height:1.7; }
+.clubs-help b { color:#234a38; }
+.clubs-help a { flex-shrink:0; font-size:12px; font-weight:600; color:#07523d; text-underline-offset:4px; }
+.clubs-note { margin:15px 0 0; color:#66725e; font-size:10px; line-height:1.7; }
+.clubs-note a { color:inherit; text-underline-offset:3px; }
+@media(max-width:1100px) { .club-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:800px) {
+  .site-header nav { gap:16px; }
+  .clubs-intro { flex-direction:column; align-items:flex-start; gap:18px; }
+  .clubs-help { flex-direction:column; align-items:flex-start; gap:10px; }
+}
+@media(max-width:600px) {
+  .clubs-section { padding:22px 18px; border-radius:16px; margin-bottom:28px; }
+  .clubs-intro h3 { font-size:37px; }
+  .clubs-intro>div>p:last-child { font-size:13px; }
+  .clubs-directory-link { width:100%; justify-content:space-between; font-size:11px; }
+  .club-grid { grid-template-columns:1fr; gap:12px; }
+  .club-card { padding:20px; }
+  .club-card-top { margin-bottom:16px; }
+  .club-interest { font-size:9px; }
+  .club-card>p { font-size:13px; margin-bottom:18px; }
+  .clubs-note { font-size:11px; }
+}
+@media print { .hero-actions { display:none; } .hero { padding-block:20px; } .club-card { break-inside:avoid; } }

@@ -4,7 +4,7 @@ An independent, student-built guide to resources and opportunities at East Los A
 
 ## Features
 
-- Searchable directory of 43 resources in eight need-based categories.
+- Searchable directory of 48 resources in eight need-based categories.
 - Access notes distinguish free services, eligibility-limited support, and services with potential fees.
 - Category, access type, online access, saved-resource, and alphabetical filters.
 - Browser-local bookmarks, resource detail dialogs, source links, and contact actions.
